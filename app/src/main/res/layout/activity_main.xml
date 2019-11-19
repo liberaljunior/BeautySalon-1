@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/servicesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Services" />
+
+            <CheckBox
+                android:id="@+id/haircutCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/haircut" />
+
+            <CheckBox
+                android:id="@+id/colorCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/color" />
+
+            <CheckBox
+                android:id="@+id/shaveCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shave" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/productsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Products" />
+
+            <CheckBox
+                android:id="@+id/shampooCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/shampoo" />
+
+            <CheckBox
+                android:id="@+id/creamCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cream" />
+
+            <CheckBox
+                android:id="@+id/gelCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/premiumButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/roundbtn"
+                android:text="@string/Premium"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/goldButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/roundbtn"
+                android:text="@string/Gold"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/silverButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/roundbtn"
+                android:text="@string/Silver"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/nonMemberButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundbtn"
+                android:text="@string/NonMember"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/actualPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/Price"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ServiceUnit" />
+
+                    <TextView
+                        android:id="@+id/servicePriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ProductUnit" />
+
+                    <TextView
+                        android:id="@+id/productPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/discountText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/discount"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ServiceUnit" />
+
+                    <TextView
+                        android:id="@+id/discountServiceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textAlignment="textStart" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ProductUnit" />
+
+                    <TextView
+                        android:id="@+id/discountProductText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.0"
+                        android:textAlignment="textStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/totalPriceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/totalPrice"
+                        android:textColor="@android:color/black"
+                        tools:layout_editor_absoluteX="6dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$" />
+
+                    <TextView
+                        android:id="@+id/totalPriceDisplayText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/roundbtn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/restart"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

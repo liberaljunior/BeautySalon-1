@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BeautySalon</string>
+    <string name="Premium">Premium</string>
+    <string name="Gold">Gold</string>
+    <string name="Silver">Silver</string>
+    <string name="NonMember">Non-member</string>
+    <string name="Services">Services</string>
+    <string name="haircut">haircut   $ 25.00</string>
+    <string name="color">color   $ 58.00</string>
+    <string name="shave">shave   $ 12.00</string>
+    <string name="Products">Products</string>
+    <string name="shampoo">shampoo   $10.00</string>
+    <string name="cream">cream   $ 27.50</string>
+    <string name="gel">gel   $ 13.00</string>
+    <string name="calculate">calculate</string>
+    <string name="totalPrice">Total Price</string>
+    <string name="discount">Discount</string>
+    <string name="Price">Price</string>
+    <string name="ServiceUnit">Services         $  </string>
+    <string name="ProductUnit">Products         $  </string>
+    <string name="restart">restart</string>
+</resources>
